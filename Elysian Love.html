@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Spotify Playlist</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background: linear-gradient(to top, white, #87CEEB);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            z-index: 1;
+        }
+
+        iframe {
+            border: none;
+            border-radius: 12px;
+            width: 100%;
+            max-width: 600px;
+            height: 380px;
+        }
+
+        .message {
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            transform: translateY(-50%);
+            font-family: 'Brush Script MT', cursive;
+            font-size: 1.5em;
+            color: #333;
+            max-width: 300px;
+            text-align: left;
+            white-space: pre-line;
+        }
+
+        .design {
+            position: absolute;
+            top: 30%;
+            right: 5%;
+            transform: translateY(-50%);
+            text-align: center;
+        }
+
+        .heart-pattern {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 250px; /* Width of heart pattern */
+        }
+
+        .heart-pattern img {
+            width: 80px; /* Adjust size of images */
+            height: auto;
+            margin: 5px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .message {
+                font-size: 1.2em; /* Smaller font size for mobile */
+                left: 2%;
+            }
+            .heart-pattern img {
+                width: 70px; /* Smaller image size for mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <iframe src="https://open.spotify.com/embed/playlist/345MLgOoSRIK7zUR4DgH7a?utm_source=generator" 
+                frameborder="0" 
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" 
+                allowfullscreen></iframe>
+    </div>
+
+    <div class="message">
+        "In the quiet reverie of the afternoon, his thoughts drifted to her, wrapped in the gentle warmth of love. <br><br> 
+        p.s. I hope u like it Aly&lt;3"
+    </div>
+
+    <div class="design">
+        <div class="heart-pattern">
+            <img src="https://i.pinimg.com/564x/8e/c2/c0/8ec2c0cffb8451c47757aaed0a71a3b2.jpg" alt="Image 1">
+            <img src="https://i.pinimg.com/564x/44/14/9f/44149f11ea0b3cdc0dfa822216da9934.jpg" alt="Image 2">
+            <img src="https://i.pinimg.com/236x/69/7e/d3/697ed39d3f5ba9a66a56482f5c6858a5.jpg" alt="Center Image" style="width: 90px; z-index: 2;">
+            <img src="https://i.pinimg.com/236x/fa/64/30/fa643000972c7be0fb7e2899ea214748.jpg" alt="Image 3">
+            <img src="https://i.pinimg.com/736x/7b/0d/6a/7b0d6a3a5cc02993a93adb19458785ee.jpg" alt="Image 4">
+            <img src="https://i.pinimg.com/736x/e1/ee/f1/e1eef1dd76bd41efb8e8d3fcf9fbc326.jpg" alt="Image 5">
+            <img src="https://i.pinimg.com/236x/e6/cc/52/e6cc529048d5ec08ffc4f542db1f9483.jpg" alt="Image 6">
+            <img src="https://i.pinimg.com/236x/4f/6f/bc/4f6fbc43e612f6efdfe7f5256d1dd6a3.jpg" alt="Image 7">
+        </div>
+    </div>
+</body>
+</html>
